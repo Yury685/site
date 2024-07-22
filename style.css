@@ -1,15 +1,13 @@
-/* style.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color: white;
     padding: 1rem;
     text-align: center;
 }
@@ -17,45 +15,36 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0.5rem;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    border-radius: 5px;
 }
 
-main {
-    padding: 2rem;
-    background-color: #fff;
+nav ul li a:hover {
+    background-color: #777;
 }
 
 .tab-content {
     display: none;
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .tab-content.active {
     display: block;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
 }
